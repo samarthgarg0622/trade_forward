@@ -1,0 +1,22 @@
+.env.example
+  h_374c888b374b12 1-25
+.gitignore
+  h_374c888b374b12 1-5
+bot.js
+  h_374c888b374b12 1-150
+index.js
+  h_374c888b374b12 1-57
+package.json
+  h_374c888b374b12 1-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c0e8741038ea5895433dba6d7a7fe2f939c46862",
+  "prompts": {},
+  "humans": {
+    "h_374c888b374b12": {
+      "author": "Samarth Garg <vimaltmt12@gmail.com>"
+    }
+  }
+}
