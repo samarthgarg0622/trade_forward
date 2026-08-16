@@ -103,6 +103,14 @@ async function startBot() {
     for (const msg of upsert.messages) {
       const remoteJid = msg.key.remoteJid;
       console.log('[DEBUG] Incoming remoteJid:', remoteJid, '| fromMe:', msg.key.fromMe);
+      if (remoteJid?.endsWith('@lid')) {
+        try {
+          const resolved = await sock.signalRepository.lidMapping.getPNForLID(remoteJid);
+          console.log('[DEBUG] Resolved LID to phone JID:', resolved);
+        } catch (err) {
+          console.log('[DEBUG] LID resolve failed:', err.message);
+        }
+      }
 
       if (!msg.message) continue;
       if (msg.key.fromMe) continue;
