@@ -102,6 +102,7 @@ async function startBot() {
 
     for (const msg of upsert.messages) {
       const remoteJid = msg.key.remoteJid;
+      console.log('[DEBUG] Incoming remoteJid:', remoteJid, '| fromMe:', msg.key.fromMe);
 
       if (!msg.message) continue;
       if (msg.key.fromMe) continue;
