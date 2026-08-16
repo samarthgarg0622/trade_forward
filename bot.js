@@ -15,7 +15,7 @@ const KNOWN_SOURCE_LIDS = (process.env.KNOWN_SOURCE_LIDS || '')
 
 const WINDOW_START = process.env.WINDOW_START || '22:40'; // 24h HH:MM
 const WINDOW_END = process.env.WINDOW_END || '23:59';     // 24h HH:MM
-const WINDOW_DAYS = (process.env.WINDOW_DAYS || '1,2,3,4,5') // 0=Sun ... 6=Sat, default Mon-Fri
+const WINDOW_DAYS = (process.env.WINDOW_DAYS || '0,1,2,3,4,5') // 0=Sun ... 6=Sat, default Mon-Fri
   .split(',')
   .map((d) => parseInt(d.trim(), 10));
 const TIMEZONE = process.env.TIMEZONE || 'Asia/Kolkata';
