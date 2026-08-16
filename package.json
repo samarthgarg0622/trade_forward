@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-forward-bot",
+  "version": "1.0.0",
+  "description": "Forwards WhatsApp messages from one chat to another, within a scheduled weekday time window",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pino": "^9.3.2",
+    "qrcode": "^1.5.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
