@@ -1,0 +1,14 @@
+bot.js
+  h_374c888b374b12 16-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "48e950a3689c79e1b7f7473f7e0df0f977250286",
+  "prompts": {},
+  "humans": {
+    "h_374c888b374b12": {
+      "author": "Samarth Garg <vimaltmt12@gmail.com>"
+    }
+  }
+}
